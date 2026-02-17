@@ -6,7 +6,9 @@
      
 
     it('adds 1+2 to equals to  3' , ()=>{
-         expect(sum(1,2)).toBe(3);
+
+        const result = sum(1,2);
+         expect(result).toBe(3);
     })
 
     it('adds 3+4 is equals to 7' ,()=>{
@@ -15,7 +17,7 @@
 
  })
 
- describe('multiply' , ()=>{
+ describe('Testing in multiply function' , ()=>{
       
     it('multiply 5*2 equals to 10',()=>{
          
@@ -26,6 +28,8 @@
          
         expect(multiply(5,5)).toBe(25);
     })
+
+
 
 
  })
