@@ -7,7 +7,7 @@ describe('POST /sum' , ()=>{
 
     it("should return the sum of two numbers" , async()=>{
          const res = (await request(app).post("/sum").send({
-            a:1,
+            a:'1',
             b:2
          }));
 
