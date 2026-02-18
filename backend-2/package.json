@@ -10,25 +10,26 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@prisma/client": "^6.14.0",
     "@types/express": "^5.0.6",
     "@types/supertest": "^6.0.3",
-    "express": "^5.2.1",
-    "supertest": "^7.2.2",
-    "zod": "^4.3.6",
-    "@prisma/client": "^6.14.0",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "express": "^5.2.1",
     "express-rate-limit": "^8.0.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.0",
     "multer": "^2.0.2",
     "node-cron": "^4.2.1",
     "nodemailer": "^7.0.6",
-    "qrcode": "^1.5.4"
+    "qrcode": "^1.5.4",
+    "supertest": "^7.2.2",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
+    "prisma": "^6.14.0",
     "vitest": "^4.0.18",
-    "prisma": "^6.14.0"
+    "vitest-mock-extended": "^3.1.0"
   }
 }
