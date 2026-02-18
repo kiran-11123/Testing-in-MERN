@@ -7,8 +7,28 @@
 generator client {
   provider = "prisma-client-js"
 }
+
+
 datasource db {
   provider = "postgresql"
+}
+
+model Request{
+   
+  id Int @id @default(autoincrement())
+
+  type   RequestType
+
+  a Int 
+  b Int 
+  result Int
+}
+
+enum RequestType{
+  sum
+  multiply
+  
+
 }
 
 model Sum{
