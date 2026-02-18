@@ -22,9 +22,10 @@ describe('POST /sum' , ()=>{
             a:1,
             b:2
          }));
-          
-         console.log(res.body)
 
+         vi.spyOn(prisma.request , "create")
+          
+         
          expect(res.statusCode).toBe(200);
          expect(res.body.result).toEqual({
             id: 1,
