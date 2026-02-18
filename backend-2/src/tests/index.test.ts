@@ -1,7 +1,17 @@
-import {describe , expect , it} from 'vitest'
+import {describe , expect , it ,vi} from 'vitest'
 import request from 'supertest'
 import { app } from '../index'
 
+// mocking the prisma client
+vi.mock('../db' , ()=>({
+  
+        prisma:{  
+            sum:{
+                create: vi.fn()
+            }
+        }
+    
+}))
 
 describe('POST /sum' , ()=>{
 
